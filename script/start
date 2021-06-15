@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+set -ex
+
+npm install
+
+./node_modules/.bin/graphql-codegen
+
+ts-node src/index.ts
